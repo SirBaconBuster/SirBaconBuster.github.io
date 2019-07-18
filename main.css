@@ -1,0 +1,120 @@
+.paragraph{
+			color:blue;
+			font-size:120%;
+		}
+.list1{
+	color:hotpink;
+	font-size:10px;
+
+}
+#body{
+	background-color:#00e9ff;
+}
+#button{
+	height:2em;
+	width:80px;
+	border-radius:15px;
+	color:#FF0080;
+	background-color:#14BADB;
+	border-color:rgb(40,205,225);
+}
+footer{
+	height:130px;
+	width:60%;
+	border: 15px solid hotpink;
+	background-color:#00ff15;
+	font-size:100px;
+	position:absolute;
+	left:16%;
+
+}
+.tankq{
+	height:250px;
+	width:35%;
+	border:10px groove #00ff15;
+	padding:3%;
+}
+.list{
+	height:60px;
+	width:290px;
+	border:5px dashed black;
+}
+.intro{
+	font-size:40px;
+	color:black;
+	background-color:white;
+}
+#one{
+	width:150px;
+	height:150px;
+	background-color:blue;
+	display: inline-block;
+	position: absolute;
+	z-index:1;
+
+}
+#two{
+	width:150px;
+	height:150px;
+	background-color:green;
+	display: inline-block;
+	position: absolute;
+	z-index:2;
+	position:relative;
+	top:300px;
+	left:25%;
+
+
+}
+#three{
+	width:150px;
+	height:150px;
+	background-color:red;
+	display: block;
+	position: absolute;
+	position:fixed;
+	left:45%;
+	
+}
+#bdy{
+	height:2048px;
+}
+.navitem{
+	list-style-type:none;
+	display:inline;
+	padding-right:1.5em;
+}
+#navmenue{
+	width:250px;
+	height:30px;
+	margin:auto;
+}
+a:link{
+	color:hotpink;
+}
+a:visited{
+	/*color:#00ff15;*/
+	color:black;
+}
+a:hover{
+	color:#00e9ff
+}
+a:active{
+	color:blue;
+}
+#right{
+	float:right;
+	width:50%;
+}
+#left{
+	width:50%;
+}
+header{
+	height:130px;
+	width:60%;
+	border: 15px solid hotpink;
+	background-color:#00ff15;
+	font-size:100px;
+	margin:auto;
+	margin-bottom: 1.3em;
+}

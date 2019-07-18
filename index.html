@@ -1,0 +1,120 @@
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css"/>
+<title> My Website</title> 
+	<script>
+		/*function banner(){
+			var banner_text = confirm("Did You Really Want to Click on That Link?");
+			return banner_text;
+		}
+		function answer(){
+			var radio = document.getElementsByName("tankq");
+			var selection =false;
+			var message = "";
+			for(var i = 0; i< radio.length; i++){
+				if(radio[i].value == "yes" && radio[i].checked ==true){
+					selection = true;
+				}
+			}
+			if(selection == true){
+				message=message+<b><p style='color:green'>That is Correct!</p></b>;
+			} else {
+				message = message +<b><p style ='color:red'>That is Incorrect.</p></b>;
+			}
+			document.getElementById("response").innerHTML = messsage;
+		}*/
+		function banner(){ 
+		var text = confirm("Did You Really Want to Click on My Banner?"); 
+		return text; 
+		}
+
+		function answer(){ 
+			var radio = document.getElementsByName("spg"); 
+			var selection = false; 
+			var message = ""; 
+
+			for( var i = 0; i < radio.length; i++) { 
+				if(radio[i].value == "yes" && radio[i].checked == true) { 
+				selection = true; 
+				} //end if statement 
+			} //end for loop
+
+		if(selection == true) {
+			message = message + "<b><p style='color:green'>That is Correct!</p></b>"; 
+			} else { 
+			message = message + "<b><p style='color:red'>That is Incorrect.</p></b>"; 
+			}
+			document.getElementById("response").innerHTML = message;
+		} //end function answer 
+	</script>
+	<style>
+		/*comment*/
+	</style>
+</head> 
+<body id="body"> 
+	<a href="http://google.com" onclick="return banner()" target="_new">
+		<header><center>My Website</center></header>
+	</a>
+	<nav>
+		<ul id="navmenue">
+			<li class="navitem"><a href="index.html">Home</a></li>
+			<li class="navitem"><a href="games.html">Games</a></li>
+			<li class="navitem"><a href="videos.html">Videos</a></li>
+		</ul>
+	</nav>
+
+	<div id="right">
+		<h1>HTML coding projects</h1>
+		<p class="paragraph"> This will eventualy be <b>a website</b> that will <i>eventualy</i> contain my coding <u>projects</u> that I <span class="intro">will be making in my</span> coding course.</p>
+
+		<div class="list">
+			<ol>
+				<li class="list1"> It will contain mostly HTML and Javascript projects</li>
+				<li class="list1"> It will be 100% created by me </li>
+				<li class="list1"> It will probably go on my portfolio </li>
+			</ol>
+		</div>
+
+		<p>An embeded video:</p>
+		<video width="400" height="200" controls autoplay>
+			<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+			Uh-oh, sumthin dun didnt go rite.
+		</video>
+		<br/>
+		<p>A youtube video:</p>
+		<iframe width="450" height="315" src="https://www.youtube.com/embed/3SO-XpbaycM?rel=0" framborder="0" allowfullscreen></iframe>
+		<br/>
+
+		<p>Embeded audio:</p>
+		<audio width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+				Uh-Oh, sumthin dun didnt go rite.
+		</audio>
+	</div>
+
+	<div id="left">
+		<div class="tankq">
+			<h2> Tank Trivia Question:</h2>
+			<p class="paragraph">What does SPG stand for?</p>
+			<form>
+				<div id="response"></div>
+				<input type="radio" name="spg" value="no">Super Pompus Gerald<br>
+				<input type="radio" name="spg" value="no">Self Purposed Grenade<br>
+				<input type="radio" name="spg" value="yes">Self Propelled Gun<br>
+				<input type="radio" name="spg" value="no">Self Propelled Grenade<br>
+				<input id= "button" type="button" value="Submit" onclick="answer()">
+			</form>
+		</div>
+		<br/>
+
+		<img src="https://i0.wp.com/www.developermemes.com/wp-content/uploads/2014/07/Wastes-2-Hours-Debugging-Broken-Javascript-Missing-A-Curly-Brace-Developer-Meme.jpg"/>
+		<img src="https://i.imgflip.com/u9pv5.jpg"/>
+	</div>
+	
+	<hr>
+
+	<center> Colten Snyder <br><a href="https://tanks.gg/"> My favorite website </a> </center>
+	<br/>
+	<footer><center>End of My Website</center></footer>
+</body> 
+</html>
